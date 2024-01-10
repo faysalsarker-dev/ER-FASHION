@@ -6,62 +6,199 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
   <title>ER Fashion</title>
 </head>
 <body>
   <!-- Add Navbar here -->
- <header>
-  <nav class="navbar navbar-expand-lg navbar-light navbarcolor fixed-top">
-    <div class="container ">
-       <a class="navbar-brand" href="#">ER Fashion</a>
-       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-         <span class="navbar-toggler-icon"></span>
-       </button>
-       <div class="collapse navbar-collapse" id="navbarNav">
-         <ul class="navbar-nav ms-auto">
-           <li class="nav-item">
-             <a class="nav-link" href="#">Home</a>
-           </li>
-           <li class="nav-item">
-             <a class="nav-link" href="#">Products</a>
-           </li>
-           <li class="nav-item">
-             <a class="nav-link" href="#">About</a>
-           </li>
-           <li class="nav-item">
-             <a class="nav-link" href="#">Contact</a>
-           </li>
-         </ul>
-       </div>
-    </div>
-   </nav>
-
-   <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active" data-bs-interval="2000">
-        <img src="img/slider1.png" class="d-block w-100" alt="slider1">
-      </div>        
-      <div class="carousel-item" data-bs-interval="2000">
-        <img src="img/slider2.png" class="d-block w-100" alt="slider2">
+  <header>
+    <nav class="navbar navbar-expand-lg navbarcolor fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">ER Fashion</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Products
+              </a>
+              <ul class="dropdown-menu me-2">
+                <li><a class="dropdown-item" href="product1.html" >Original Dubai cherry fabric</a></li>
+                <li><a class="dropdown-item" href="product2.html">Dubai Design Burka</a></li>
+                <li><a class="dropdown-item" href="product3.html">Kurti</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="product4.html">1pc</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="carousel-item" data-bs-interval="2000">
-        <img src="img/slider3.png" class="d-block w-100" alt="slider3">
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
+    </nav>
   
- </header>
+    <div id="carouselExampleInterval" class="carousel slide " data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="2000">
+          <img src="img/slider1.png" class="d-block w-100" alt="slider1">
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="img/slider2.png" class="d-block w-100" alt="slider2">
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="img/slider3.png" class="d-block w-100" alt="slider3">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </header>
+  
   <!-- Add Slider here -->
  <main>
+
+  <!-- <div class="container">
+    <h3>Our Product</h3>
+    <p class="d-inline-flex gap-1">
+      <a class="btn btn-primary" data-bs-toggle="collapse" href="#Original-Dubai-cherry-fabric" role="button" aria-expanded="false" aria-controls="collapseExample">
+        Original Dubai cherry fabric
+      </a>
+      <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#Dubai-Design-Burka" aria-expanded="false" aria-controls="collapseExample">
+        Dubai Design Burka
+      </button>
+      <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+        Kurti
+      </button>
+      <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+        1pc
+      </button>
+    </p>
+    <div class="collapse" id="Original-Dubai-cherry-fabric">
+      <div class="card card-body">
+
+  <br>
+      </div>
+    </div>
+    <div class="collapse" id="Dubai-Design-Burka">
+  <div class="card card-body">
+    <div class="row">
+         
+      <div class="col-md-3 col-6 mb-1">
+       <a href="facebook.com"> <div class="card">
+        <img src="img/img17.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Dubai Design Burka</h5>
+          <div class="star">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-half"></i>
+          </div>
+          <p>1800 BDT</p>
+         <div class=" actions">
+          <button class="btn btn-buys b2"><i class="bi bi-bag"></i> Buy</button>
+          <button class="btn btns b2"><i class="bi bi-eye"></i> View</button>
+         </div>
+        </div>
+      </div></a>
+      </div>
+  
+  
+      <div class="col-md-3 col-6 mt-1 mb-1">
+       <a href="facebook.com"> <div class="card">
+        <img src="img/img18.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Dubai Design Burka</h5>
+          <div class="star">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-half"></i>
+          </div>
+          <p>1800 BDT</p>
+         <div class=" actions">
+          <button class="btn btn-buys b2"><i class="bi bi-bag"></i> Buy</button>
+          <button class="btn btns b2"><i class="bi bi-eye"></i> View</button>
+         </div>
+        </div>
+      </div></a>
+      </div>
+  
+  
+      <div class="col-md-3 col-6 mt-1 mb-1" >
+       <a href="facebook.com"> <div class="card">
+        <img src="img/img19.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Dubai Design Burka</h5>
+          <div class="star">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-half"></i>
+          </div>
+          <p>1800 BDT</p>
+         <div class=" actions">
+          <button class="btn btn-buys b2"><i class="bi bi-bag"></i> Buy</button>
+          <button class="btn btns b2"><i class="bi bi-eye"></i> View</button>
+         </div>
+        </div>
+      </div></a>
+      </div>
+  
+  
+      <div class="col-md-3 col-6 mt-1 mb-1">
+       <a href="facebook.com"> <div class="card">
+        <img src="img/img20.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Dubai Design Burka</h5>
+          <div class="star">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-half"></i>
+          </div>
+          <p>1800 BDT</p>
+         <div class=" actions">
+          <button class="btn btn-buys b2"><i class="bi bi-bag"></i> Buy</button>
+          <button class="btn btns b2"><i class="bi bi-eye"></i> View</button>
+         </div>
+        </div>
+      </div></a>
+      </div>
+  
+  
+  
+    </div>
+  
+  </div>
+    </div>
+  
+  
+  </div>
+   -->
+  
+  
 
   <h2 class="text-center treand mb-3 mt-2">Trending Products</h2>
   <section class="py-3">
@@ -75,15 +212,15 @@
         <a href="facebook.com"> <div class="card">
          <img src="img/img1.jpg" class="card-img-top" alt="...">
          <div class="card-body">
-           <h5 class="card-title">Nidah cherry kapor</h5>
-           <div class="text-warning">
+           <h5 class="card-title">Original Dubai cherry fabric</h5>
+           <div class="star">
              <i class="bi bi-star-fill"></i>
              <i class="bi bi-star-fill"></i>
              <i class="bi bi-star-fill"></i>
              <i class="bi bi-star-fill"></i>
              <i class="bi bi-star-half"></i>
            </div>
-           <p  class="price mt-2">200 BDT</p>
+           <p  class="price mt-2">2150 BDT</p>
           <div class=" actions">
            <button class="btn btn-buys"><i class="bi bi-bag"></i> Buy</button>
            <button class="btn btns"><i class="bi bi-eye"></i> View</button>
@@ -97,15 +234,15 @@
         <a href="facebook.com"> <div class="card">
          <img src="img/img2.jpg" class="card-img-top" alt="...">
          <div class="card-body">
-           <h5 class="card-title">Nidah cherry kapor</h5>
-           <div class="text-warning">
+           <h5 class="card-title">Original Dubai cherry fabric</h5>
+           <div class="star">
              <i class="bi bi-star-fill"></i>
              <i class="bi bi-star-fill"></i>
              <i class="bi bi-star-fill"></i>
              <i class="bi bi-star-fill"></i>
              <i class="bi bi-star-half"></i>
            </div>
-           <p class="price mt-2">200 BDT</p>
+           <p class="price mt-2">2200 BDT</p>
           <div class=" actions">
            <button class="btn btn-buys"><i class="bi bi-bag"></i> Buy</button>
            <button class="btn btns"><i class="bi bi-eye"></i> View</button>
@@ -119,15 +256,15 @@
         <a href="facebook.com"> <div class="card">
          <img src="img/img3.jpg" class="card-img-top" alt="...">
          <div class="card-body">
-           <h5 class="card-title">Nidah cherry kapor</h5>
-           <div class="text-warning">
+           <h5 class="card-title">Original Dubai cherry fabric</h5>
+           <div class="star">
              <i class="bi bi-star-fill"></i>
              <i class="bi bi-star-fill"></i>
              <i class="bi bi-star-fill"></i>
              <i class="bi bi-star-fill"></i>
              <i class="bi bi-star-half"></i>
            </div>
-           <p class="price mt-2">200 BDT</p>
+           <p class="price mt-2">2200 BDT</p>
           <div class=" actions">
            <button class="btn btn-buys"><i class="bi bi-bag"></i> Buy</button>
            <button class="btn btns"><i class="bi bi-eye"></i> View</button>
@@ -141,15 +278,15 @@
         <a href="facebook.com"> <div class="card">
          <img src="img/img4.jpg" class="card-img-top" alt="...">
          <div class="card-body">
-           <h5 class="card-title">Nidah cherry kapor</h5>
-           <div class="text-warning">
+           <h5 class="card-title">Original Dubai cherry fabric</h5>
+           <div class="star">
              <i class="bi bi-star-fill"></i>
              <i class="bi bi-star-fill"></i>
              <i class="bi bi-star-fill"></i>
              <i class="bi bi-star-fill"></i>
              <i class="bi bi-star-half"></i>
            </div>
-           <p class="price mt-2">200 BDT</p>
+           <p class="price mt-2">2150 BDT</p>
           <div class=" actions">
            <button class="btn btn-buys"><i class="bi bi-bag"></i> Buy</button>
            <button class="btn btns"><i class="bi bi-eye"></i> View</button>
@@ -170,15 +307,15 @@
         <a href="facebook.com"> <div class="card">
          <img src="img/img5.jpg" class="card-img-top" alt="...">
          <div class="card-body">
-           <h5 class="card-title">Nidah cherry kapor</h5>
-           <div class="text-warning">
+           <h5 class="card-title">Original Dubai cherry fabric</h5>
+           <div class="star">
              <i class="bi bi-star-fill"></i>
              <i class="bi bi-star-fill"></i>
              <i class="bi bi-star-fill"></i>
              <i class="bi bi-star-fill"></i>
              <i class="bi bi-star-half"></i>
            </div>
-           <p  class="price mt-2">200 BDT</p>
+           <p  class="price mt-2">2150 BDT</p>
           <div class=" actions">
            <button class="btn btn-buys"><i class="bi bi-bag"></i> Buy</button>
            <button class="btn btns"><i class="bi bi-eye"></i> View</button>
@@ -192,15 +329,15 @@
         <a href="facebook.com"> <div class="card">
          <img src="img/img6.jpg" class="card-img-top" alt="...">
          <div class="card-body">
-           <h5 class="card-title">Nidah cherry kapor</h5>
-           <div class="text-warning">
+           <h5 class="card-title">Original Dubai cherry fabric</h5>
+           <div class="star">
              <i class="bi bi-star-fill"></i>
              <i class="bi bi-star-fill"></i>
              <i class="bi bi-star-fill"></i>
              <i class="bi bi-star-fill"></i>
              <i class="bi bi-star-half"></i>
            </div>
-           <p class="price mt-2">200 BDT</p>
+           <p class="price mt-2">2150 BDT</p>
           <div class=" actions">
            <button class="btn btn-buys"><i class="bi bi-bag"></i> Buy</button>
            <button class="btn btns"><i class="bi bi-eye"></i> View</button>
@@ -214,15 +351,15 @@
         <a href="facebook.com"> <div class="card">
          <img src="img/img7.jpg" class="card-img-top" alt="...">
          <div class="card-body">
-           <h5 class="card-title">Nidah cherry kapor</h5>
-           <div class="text-warning">
+           <h5 class="card-title">Original Dubai cherry fabric</h5>
+           <div class="star">
              <i class="bi bi-star-fill"></i>
              <i class="bi bi-star-fill"></i>
              <i class="bi bi-star-fill"></i>
              <i class="bi bi-star-fill"></i>
              <i class="bi bi-star-half"></i>
            </div>
-           <p class="price mt-2">200 BDT</p>
+           <p class="price mt-2">2100 BDT</p>
           <div class=" actions">
            <button class="btn btn-buys"><i class="bi bi-bag"></i> Buy</button>
            <button class="btn btns"><i class="bi bi-eye"></i> View</button>
@@ -236,15 +373,15 @@
         <a href="facebook.com"> <div class="card">
          <img src="img/img8.jpg" class="card-img-top" alt="...">
          <div class="card-body">
-           <h5 class="card-title">Nidah cherry kapor</h5>
-           <div class="text-warning">
+           <h5 class="card-title">Original Dubai cherry fabric</h5>
+           <div class="star">
              <i class="bi bi-star-fill"></i>
              <i class="bi bi-star-fill"></i>
              <i class="bi bi-star-fill"></i>
              <i class="bi bi-star-fill"></i>
              <i class="bi bi-star-half"></i>
            </div>
-           <p class="price mt-2">200 BDT</p>
+           <p class="price mt-2">2100 BDT</p>
           <div class=" actions">
            <button class="btn btn-buys"><i class="bi bi-bag"></i> Buy</button>
            <button class="btn btns"><i class="bi bi-eye"></i> View</button>
@@ -264,15 +401,15 @@
         <a href="facebook.com"> <div class="card">
          <img src="img/img9.jpg" class="card-img-top" alt="...">
          <div class="card-body">
-           <h5 class="card-title">Kurti</h5>
-           <div class="text-warning">
+           <h5 class="card-title">Original Dubai cherry fabric</h5>
+           <div class="star">
              <i class="bi bi-star-fill"></i>
              <i class="bi bi-star-fill"></i>
              <i class="bi bi-star-fill"></i>
              <i class="bi bi-star-fill"></i>
              <i class="bi bi-star-half"></i>
            </div>
-           <p  class="price mt-2">200 BDT</p>
+           <p  class="price mt-2">2100 BDT</p>
           <div class=" actions">
            <button class="btn btn-buys"><i class="bi bi-bag"></i> Buy</button>
            <button class="btn btns"><i class="bi bi-eye"></i> View</button>
@@ -286,15 +423,15 @@
         <a href="facebook.com"> <div class="card">
          <img src="img/img10.jpg" class="card-img-top" alt="...">
          <div class="card-body">
-           <h5 class="card-title">Kurti</h5>
-           <div class="text-warning">
+           <h5 class="card-title">Original Dubai cherry fabric</h5>
+           <div class="star">
              <i class="bi bi-star-fill"></i>
              <i class="bi bi-star-fill"></i>
              <i class="bi bi-star-fill"></i>
              <i class="bi bi-star-fill"></i>
              <i class="bi bi-star-half"></i>
            </div>
-           <p class="price mt-2">200 BDT</p>
+           <p class="price mt-2">2200 BDT</p>
           <div class=" actions">
            <button class="btn btn-buys"><i class="bi bi-bag"></i> Buy</button>
            <button class="btn btns"><i class="bi bi-eye"></i> View</button>
@@ -308,15 +445,15 @@
         <a href="facebook.com"> <div class="card">
          <img src="img/img11.jpg" class="card-img-top" alt="...">
          <div class="card-body">
-           <h5 class="card-title">Kurti</h5>
-           <div class="text-warning">
+           <h5 class="card-title">Original Dubai cherry fabric</h5>
+           <div class="star">
              <i class="bi bi-star-fill"></i>
              <i class="bi bi-star-fill"></i>
              <i class="bi bi-star-fill"></i>
              <i class="bi bi-star-fill"></i>
              <i class="bi bi-star-half"></i>
            </div>
-           <p class="price mt-2">200 BDT</p>
+           <p class="price mt-2">3000 BDT</p>
           <div class=" actions">
            <button class="btn btn-buys"><i class="bi bi-bag"></i> Buy</button>
            <button class="btn btns"><i class="bi bi-eye"></i> View</button>
@@ -330,15 +467,15 @@
         <a href="facebook.com"> <div class="card">
          <img src="img/img12.jpg" class="card-img-top" alt="...">
          <div class="card-body">
-           <h5 class="card-title">Kurti</h5>
-           <div class="text-warning">
+           <h5 class="card-title">Original Dubai cherry fabric</h5>
+           <div class="star">
              <i class="bi bi-star-fill"></i>
              <i class="bi bi-star-fill"></i>
              <i class="bi bi-star-fill"></i>
              <i class="bi bi-star-fill"></i>
              <i class="bi bi-star-half"></i>
            </div>
-           <p class="price mt-2">200 BDT</p>
+           <p class="price mt-2">2200 BDT</p>
           <div class=" actions">
            <button class="btn btn-buys"><i class="bi bi-bag"></i> Buy</button>
            <button class="btn btns"><i class="bi bi-eye"></i> View</button>
@@ -358,15 +495,15 @@
         <a href="facebook.com"> <div class="card">
          <img src="img/img13.jpg" class="card-img-top" alt="...">
          <div class="card-body">
-           <h5 class="card-title">Nidah cherry kapor</h5>
-           <div class="text-warning">
+           <h5 class="card-title">Kurti</h5>
+           <div class="star">
              <i class="bi bi-star-fill"></i>
              <i class="bi bi-star-fill"></i>
              <i class="bi bi-star-fill"></i>
              <i class="bi bi-star-fill"></i>
              <i class="bi bi-star-half"></i>
            </div>
-           <p class="price">200 BDT</p>
+           <p class="price">450 BDT</p>
           <div class=" actions">
            <button class="btn btn-buys"><i class="bi bi-bag"></i> Buy</button>
            <button class="btn btns"><i class="bi bi-eye"></i> View</button>
@@ -380,15 +517,15 @@
         <a href="facebook.com"> <div class="card">
          <img src="img/img14.jpg" class="card-img-top" alt="...">
          <div class="card-body">
-           <h5 class="card-title">Nidah cherry kapor</h5>
-           <div class="text-warning">
+           <h5 class="card-title">Kurti</h5>
+           <div class="star">
              <i class="bi bi-star-fill"></i>
              <i class="bi bi-star-fill"></i>
              <i class="bi bi-star-fill"></i>
              <i class="bi bi-star-fill"></i>
              <i class="bi bi-star-half"></i>
            </div>
-           <p class="price mt-2">200 BDT</p>
+           <p class="price mt-2">450 BDT</p>
           <div class=" actions">
            <button class="btn btn-buys"><i class="bi bi-bag"></i> Buy</button>
            <button class="btn btns"><i class="bi bi-eye"></i> View</button>
@@ -402,15 +539,15 @@
         <a href="facebook.com"> <div class="card">
          <img src="img/img15.jpg" class="card-img-top" alt="...">
          <div class="card-body">
-           <h5 class="card-title">Nidah cherry kapor</h5>
-           <div class="text-warning">
+           <h5 class="card-title">Dubai Design Burka</h5>
+           <div class="star">
              <i class="bi bi-star-fill"></i>
              <i class="bi bi-star-fill"></i>
              <i class="bi bi-star-fill"></i>
              <i class="bi bi-star-fill"></i>
              <i class="bi bi-star-half"></i>
            </div>
-           <p class="price">200 BDT</p>
+           <p class="price">1800 BDT</p>
           <div class=" actions">
            <button class="btn btn-buys"><i class="bi bi-bag"></i> Buy</button>
            <button class="btn btns"><i class="bi bi-eye"></i> View</button>
@@ -424,15 +561,15 @@
         <a href="facebook.com"> <div class="card">
          <img src="img/img16.jpg" class="card-img-top" alt="...">
          <div class="card-body">
-           <h5 class="card-title">Nidah cherry kapor</h5>
-           <div class="text-warning">
+           <h5 class="card-title">Dubai Design Burka</h5>
+           <div class="star">
              <i class="bi bi-star-fill"></i>
              <i class="bi bi-star-fill"></i>
              <i class="bi bi-star-fill"></i>
              <i class="bi bi-star-fill"></i>
              <i class="bi bi-star-half"></i>
            </div>
-           <p class="price mt-2">200 BDT</p>
+           <p class="price mt-2">1800 BDT</p>
           <div class=" actions">
            <button class="btn btn-buys"><i class="bi bi-bag"></i> Buy</button>
            <button class="btn btns"><i class="bi bi-eye"></i> View</button>
@@ -465,15 +602,15 @@
       <a href="facebook.com"> <div class="card">
        <img src="img/img17.jpg" class="card-img-top" alt="...">
        <div class="card-body">
-         <h5 class="card-title">Nidah cherry kapor</h5>
-         <div class="text-warning">
+         <h5 class="card-title">Dubai Design Burka</h5>
+         <div class="star">
            <i class="bi bi-star-fill"></i>
            <i class="bi bi-star-fill"></i>
            <i class="bi bi-star-fill"></i>
            <i class="bi bi-star-fill"></i>
            <i class="bi bi-star-half"></i>
          </div>
-         <p>200 BDT</p>
+         <p>1800 BDT</p>
         <div class=" actions">
          <button class="btn btn-buys b2"><i class="bi bi-bag"></i> Buy</button>
          <button class="btn btns b2"><i class="bi bi-eye"></i> View</button>
@@ -487,15 +624,15 @@
       <a href="facebook.com"> <div class="card">
        <img src="img/img18.jpg" class="card-img-top" alt="...">
        <div class="card-body">
-         <h5 class="card-title">Nidah cherry kapor</h5>
-         <div class="text-warning">
+         <h5 class="card-title">Dubai Design Burka</h5>
+         <div class="star">
            <i class="bi bi-star-fill"></i>
            <i class="bi bi-star-fill"></i>
            <i class="bi bi-star-fill"></i>
            <i class="bi bi-star-fill"></i>
            <i class="bi bi-star-half"></i>
          </div>
-         <p>200 BDT</p>
+         <p>1800 BDT</p>
         <div class=" actions">
          <button class="btn btn-buys b2"><i class="bi bi-bag"></i> Buy</button>
          <button class="btn btns b2"><i class="bi bi-eye"></i> View</button>
@@ -509,15 +646,15 @@
       <a href="facebook.com"> <div class="card">
        <img src="img/img19.jpg" class="card-img-top" alt="...">
        <div class="card-body">
-         <h5 class="card-title">Nidah cherry kapor</h5>
-         <div class="text-warning">
+         <h5 class="card-title">Dubai Design Burka</h5>
+         <div class="star">
            <i class="bi bi-star-fill"></i>
            <i class="bi bi-star-fill"></i>
            <i class="bi bi-star-fill"></i>
            <i class="bi bi-star-fill"></i>
            <i class="bi bi-star-half"></i>
          </div>
-         <p>200 BDT</p>
+         <p>1800 BDT</p>
         <div class=" actions">
          <button class="btn btn-buys b2"><i class="bi bi-bag"></i> Buy</button>
          <button class="btn btns b2"><i class="bi bi-eye"></i> View</button>
@@ -531,15 +668,15 @@
       <a href="facebook.com"> <div class="card">
        <img src="img/img20.jpg" class="card-img-top" alt="...">
        <div class="card-body">
-         <h5 class="card-title">Nidah cherry kapor</h5>
-         <div class="text-warning">
+         <h5 class="card-title">Dubai Design Burka</h5>
+         <div class="star">
            <i class="bi bi-star-fill"></i>
            <i class="bi bi-star-fill"></i>
            <i class="bi bi-star-fill"></i>
            <i class="bi bi-star-fill"></i>
            <i class="bi bi-star-half"></i>
          </div>
-         <p>200 BDT</p>
+         <p>1800 BDT</p>
         <div class=" actions">
          <button class="btn btn-buys b2"><i class="bi bi-bag"></i> Buy</button>
          <button class="btn btns b2"><i class="bi bi-eye"></i> View</button>
@@ -561,7 +698,7 @@
        <img src="img/img21.jpg" class="card-img-top" alt="...">
        <div class="card-body">
          <h5 class="card-title">Nidah cherry kapor</h5>
-         <div class="text-warning">
+         <div class="star">
            <i class="bi bi-star-fill"></i>
            <i class="bi bi-star-fill"></i>
            <i class="bi bi-star-fill"></i>
@@ -583,7 +720,7 @@
        <img src="img/img22.jpg" class="card-img-top" alt="...">
        <div class="card-body">
          <h5 class="card-title">Nidah cherry kapor</h5>
-         <div class="text-warning">
+         <div class="star">
            <i class="bi bi-star-fill"></i>
            <i class="bi bi-star-fill"></i>
            <i class="bi bi-star-fill"></i>
@@ -605,7 +742,7 @@
        <img src="img/img23.jpg" class="card-img-top" alt="...">
        <div class="card-body">
          <h5 class="card-title">Nidah cherry kapor</h5>
-         <div class="text-warning">
+         <div class="star">
            <i class="bi bi-star-fill"></i>
            <i class="bi bi-star-fill"></i>
            <i class="bi bi-star-fill"></i>
@@ -627,7 +764,7 @@
        <img src="img/img24.jpg" class="card-img-top" alt="...">
        <div class="card-body">
          <h5 class="card-title">Nidah cherry kapor</h5>
-         <div class="text-warning">
+         <div class="star">
            <i class="bi bi-star-fill"></i>
            <i class="bi bi-star-fill"></i>
            <i class="bi bi-star-fill"></i>
@@ -657,7 +794,7 @@
        <img src="img/img25.jpg" class="card-img-top" alt="...">
        <div class="card-body">
          <h5 class="card-title">Nidah cherry kapor</h5>
-         <div class="text-warning">
+         <div class="star">
            <i class="bi bi-star-fill"></i>
            <i class="bi bi-star-fill"></i>
            <i class="bi bi-star-fill"></i>
@@ -679,7 +816,7 @@
        <img src="img/img26.jpg" class="card-img-top" alt="...">
        <div class="card-body">
          <h5 class="card-title">Nidah cherry kapor</h5>
-         <div class="text-warning">
+         <div class="star">
            <i class="bi bi-star-fill"></i>
            <i class="bi bi-star-fill"></i>
            <i class="bi bi-star-fill"></i>
@@ -701,7 +838,7 @@
        <img src="img/img27.jpg" class="card-img-top" alt="...">
        <div class="card-body">
          <h5 class="card-title">Dubai Borqa</h5>
-         <div class="text-warning">
+         <div class="star">
            <i class="bi bi-star-fill"></i>
            <i class="bi bi-star-fill"></i>
            <i class="bi bi-star-fill"></i>
@@ -723,7 +860,7 @@
        <img src="img/img28.jpg" class="card-img-top" alt="...">
        <div class="card-body">
          <h5 class="card-title">Nidah cherry kapor</h5>
-         <div class="text-warning">
+         <div class="star">
            <i class="bi bi-star-fill"></i>
            <i class="bi bi-star-fill"></i>
            <i class="bi bi-star-fill"></i>
@@ -752,7 +889,7 @@
       <img src="img/img29.jpg" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">Nidah cherry kapor</h5>
-        <div class="text-warning">
+        <div class="star">
           <i class="bi bi-star-fill"></i>
           <i class="bi bi-star-fill"></i>
           <i class="bi bi-star-fill"></i>
@@ -774,7 +911,7 @@
       <img src="img/img30.jpg" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">Nidah cherry kapor</h5>
-        <div class="text-warning">
+        <div class="star">
           <i class="bi bi-star-fill"></i>
           <i class="bi bi-star-fill"></i>
           <i class="bi bi-star-fill"></i>
@@ -796,7 +933,7 @@
       <img src="img/img31.jpg" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">Nidah cherry kapor</h5>
-        <div class="text-warning">
+        <div class="star">
           <i class="bi bi-star-fill"></i>
           <i class="bi bi-star-fill"></i>
           <i class="bi bi-star-fill"></i>
@@ -818,7 +955,7 @@
       <img src="img/img32.jpg" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">Nidah cherry kapor</h5>
-        <div class="text-warning">
+        <div class="star">
           <i class="bi bi-star-fill"></i>
           <i class="bi bi-star-fill"></i>
           <i class="bi bi-star-fill"></i>
@@ -845,7 +982,7 @@
       <img src="img/img33.jpg" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">Nidah cherry kapor</h5>
-        <div class="text-warning">
+        <div class="star">
           <i class="bi bi-star-fill"></i>
           <i class="bi bi-star-fill"></i>
           <i class="bi bi-star-fill"></i>
@@ -867,7 +1004,7 @@
       <img src="img/img34.jpg" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">Nidah cherry kapor</h5>
-        <div class="text-warning">
+        <div class="star">
           <i class="bi bi-star-fill"></i>
           <i class="bi bi-star-fill"></i>
           <i class="bi bi-star-fill"></i>
@@ -889,7 +1026,7 @@
       <img src="img/img35.jpg" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">Nidah cherry kapor</h5>
-        <div class="text-warning">
+        <div class="star">
           <i class="bi bi-star-fill"></i>
           <i class="bi bi-star-fill"></i>
           <i class="bi bi-star-fill"></i>
@@ -911,7 +1048,7 @@
       <img src="img/img36.jpg" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">Nidah cherry kapor</h5>
-        <div class="text-warning">
+        <div class="star">
           <i class="bi bi-star-fill"></i>
           <i class="bi bi-star-fill"></i>
           <i class="bi bi-star-fill"></i>
@@ -938,7 +1075,7 @@
      <img src="img/img37.jpg" class="card-img-top" alt="...">
      <div class="card-body">
        <h5 class="card-title">Nidah cherry kapor</h5>
-       <div class="text-warning">
+       <div class="star">
          <i class="bi bi-star-fill"></i>
          <i class="bi bi-star-fill"></i>
          <i class="bi bi-star-fill"></i>
@@ -959,7 +1096,7 @@
      <img src="img/img38.jpg" class="card-img-top" alt="...">
      <div class="card-body">
        <h5 class="card-title">Nidah cherry kapor</h5>
-       <div class="text-warning">
+       <div class="star">
          <i class="bi bi-star-fill"></i>
          <i class="bi bi-star-fill"></i>
          <i class="bi bi-star-fill"></i>
@@ -980,7 +1117,7 @@
      <img src="img/img39.jpg" class="card-img-top" alt="...">
      <div class="card-body">
        <h5 class="card-title">Nidah cherry kapor</h5>
-       <div class="text-warning">
+       <div class="star">
          <i class="bi bi-star-fill"></i>
          <i class="bi bi-star-fill"></i>
          <i class="bi bi-star-fill"></i>
@@ -1001,7 +1138,7 @@
      <img src="img/img40.jpg" class="card-img-top" alt="...">
      <div class="card-body">
        <h5 class="card-title">Nidah cherry kapor</h5>
-       <div class="text-warning">
+       <div class="star">
          <i class="bi bi-star-fill"></i>
          <i class="bi bi-star-fill"></i>
          <i class="bi bi-star-fill"></i>
@@ -1026,7 +1163,7 @@
      <img src="img/img41.jpg" class="card-img-top" alt="...">
      <div class="card-body">
        <h5 class="card-title">Nidah cherry kapor</h5>
-       <div class="text-warning">
+       <div class="star">
          <i class="bi bi-star-fill"></i>
          <i class="bi bi-star-fill"></i>
          <i class="bi bi-star-fill"></i>
@@ -1047,7 +1184,7 @@
      <img src="img/img42.jpg" class="card-img-top" alt="...">
      <div class="card-body">
        <h5 class="card-title">Nidah cherry kapor</h5>
-       <div class="text-warning">
+       <div class="star">
          <i class="bi bi-star-fill"></i>
          <i class="bi bi-star-fill"></i>
          <i class="bi bi-star-fill"></i>
@@ -1068,7 +1205,7 @@
      <img src="img/img43.jpg" class="card-img-top" alt="...">
      <div class="card-body">
        <h5 class="card-title">Nidah cherry kapor</h5>
-       <div class="text-warning">
+       <div class="star">
          <i class="bi bi-star-fill"></i>
          <i class="bi bi-star-fill"></i>
          <i class="bi bi-star-fill"></i>
@@ -1089,7 +1226,7 @@
      <img src="img/img44.jpg" class="card-img-top" alt="...">
      <div class="card-body">
        <h5 class="card-title">Nidah cherry kapor</h5>
-       <div class="text-warning">
+       <div class="star">
          <i class="bi bi-star-fill"></i>
          <i class="bi bi-star-fill"></i>
          <i class="bi bi-star-fill"></i>
@@ -1113,7 +1250,7 @@
      <img src="img/img45.jpg" class="card-img-top" alt="...">
      <div class="card-body">
        <h5 class="card-title">Nidah cherry kapor</h5>
-       <div class="text-warning">
+       <div class="star">
          <i class="bi bi-star-fill"></i>
          <i class="bi bi-star-fill"></i>
          <i class="bi bi-star-fill"></i>
@@ -1134,7 +1271,7 @@
      <img src="img/img46.jpg" class="card-img-top" alt="...">
      <div class="card-body">
        <h5 class="card-title">Nidah cherry kapor</h5>
-       <div class="text-warning">
+       <div class="star">
          <i class="bi bi-star-fill"></i>
          <i class="bi bi-star-fill"></i>
          <i class="bi bi-star-fill"></i>
@@ -1155,7 +1292,7 @@
      <img src="img/img47.jpg" class="card-img-top" alt="...">
      <div class="card-body">
        <h5 class="card-title">Nidah cherry kapor</h5>
-       <div class="text-warning">
+       <div class="star">
          <i class="bi bi-star-fill"></i>
          <i class="bi bi-star-fill"></i>
          <i class="bi bi-star-fill"></i>
@@ -1176,7 +1313,7 @@
      <img src="img/img48.jpg" class="card-img-top" alt="...">
      <div class="card-body">
        <h5 class="card-title">Dubai cherry</h5>
-       <div class="text-warning">
+       <div class="star">
          <i class="bi bi-star-fill"></i>
          <i class="bi bi-star-fill"></i>
          <i class="bi bi-star-fill"></i>
@@ -1200,7 +1337,7 @@
      <img src="img/img49.jpg" class="card-img-top" alt="...">
      <div class="card-body">
        <h5 class="card-title">Dubai cherry</h5>
-       <div class="text-warning">
+       <div class="star">
          <i class="bi bi-star-fill"></i>
          <i class="bi bi-star-fill"></i>
          <i class="bi bi-star-fill"></i>
@@ -1320,6 +1457,7 @@
       
    </div>
  </div> -->
+
 
 
 
